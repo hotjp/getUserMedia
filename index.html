@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html,
+    body,
+    .full {
+        height: 100%;
+    }
+
+    .full {
+        overflow: hidden;
+    }
+
+    video {
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="full">
+        <video id="video" src=""></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+        <a href="javascript:;" onclick="getMedia()">获取</a>
+        <a href="javascript:;" onclick="pauseMedia()">暂停</a>
+        <a href="javascript:;" onclick="closeMedia()">停止</a>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
