@@ -11,7 +11,8 @@ function getMedia() {
 var localStream;
 
 function successFunc(stream) {
-  video.src = window.URL && window.URL.createObjectURL(stream) || stream;
+  // video.src = window.URL && window.URL.createObjectURL(stream) || stream;
+  video.src = stream;
   renderCvs();
 }
 
